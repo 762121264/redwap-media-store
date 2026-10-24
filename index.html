@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedWap Media Store</title>
+    <meta
+      name="description"
+      content="RedWap Media Store - premium digital media platform for movies, music, games, and bundles."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar container">
+        <div class="brand-wrap">
+          <div class="brand-mark">R</div>
+          <div class="brand-text">
+            <span class="brand-name">REDWAP</span>
+            <span class="brand-tag">MEDIA STORE</span>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#">Home</a>
+          <a href="#catalog">Browse</a>
+          <a href="#deals">Deals</a>
+          <a href="#collections">Collections</a>
+          <a href="#support">Support</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="ghost-btn">Sign in</button>
+          <button class="cart-pill" aria-label="Shopping cart">
+            <span>Cart</span>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero container">
+          <div class="hero-copy">
+            <p class="eyebrow">Fast, legal, premium media</p>
+            <h1>Download your next obsession.</h1>
+            <p class="subtitle">
+              Curated films, chart-topping music, exclusive games, and creator bundles—ready
+              to stream, save, and enjoy instantly.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#catalog" class="primary-btn">Shop now</a>
+              <a href="#deals" class="secondary-btn">View deals</a>
+            </div>
+
+            <div class="hero-metrics">
+              <div>
+                <strong>140K+</strong>
+                <span>media titles</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>customer rating</span>
+              </div>
+              <div>
+                <strong>2 min</strong>
+                <span>avg. delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured media showcase">
+            <div class="floating-card card-top">
+              <span class="card-label">Featured drop</span>
+              <h3>Neon Drift</h3>
+              <p>4K Sci‑Fi UHD</p>
+              <div class="price-row">
+                <strong>$19.99</strong>
+                <span>save 35%</span>
+              </div>
+            </div>
+
+            <div class="poster-glow"></div>
+            <div class="poster-frame">
+              <div class="poster-badge">NEW</div>
+            </div>
+
+            <div class="floating-card card-bottom">
+              <div class="mini-stat">
+                <span>Downloads</span>
+                <strong>18.4K</strong>
+              </div>
+              <div class="mini-stat accent">
+                <span>Members</span>
+                <strong>96K</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="deals" class="promo-strip container">
+          <div class="promo-item">
+            <span class="promo-icon">⚡</span>
+            <div>
+              <strong>Flash deals</strong>
+              <small>Up to 70% off</small>
+            </div>
+          </div>
+          <div class="promo-item">
+            <span class="promo-icon">🎧</span>
+            <div>
+              <strong>Bundle & save</strong>
+              <small>Mix audio + video</small>
+            </div>
+          </div>
+          <div class="promo-item">
+            <span class="promo-icon">🎁</span>
+            <div>
+              <strong>Gift cards</strong>
+              <small>Instant digital delivery</small>
+            </div>
+          </div>
+        </section>
+
+        <section id="catalog" class="catalog container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Popular picks</p>
+              <h2>Discover your next favorite</h2>
+            </div>
+            <div class="controls">
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search media..."
+                aria-label="Search media"
+              />
+            </div>
+          </div>
+
+          <div class="categories" aria-label="Media categories">
+            <button class="category-btn active" data-filter="all">All</button>
+            <button class="category-btn" data-filter="movies">Movies</button>
+            <button class="category-btn" data-filter="music">Music</button>
+            <button class="category-btn" data-filter="games">Games</button>
+            <button class="category-btn" data-filter="collections">Collections</button>
+          </div>
+
+          <div class="catalog-grid" id="productGrid">
+            <article class="product-card" data-category="movies" data-name="Neon Drift">
+              <div class="product-image image-one">
+                <span class="product-tag">4K</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Movies</span>
+                  <span>★ 4.9</span>
+                </div>
+                <h3>Neon Drift</h3>
+                <p>Cyber-thriller across a broken future.</p>
+                <div class="product-footer">
+                  <strong>$19.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="music" data-name="Velvet Echo">
+              <div class="product-image image-two">
+                <span class="product-tag">Audio</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Music</span>
+                  <span>★ 4.8</span>
+                </div>
+                <h3>Velvet Echo</h3>
+                <p>Night-drive synth album with 14 tracks.</p>
+                <div class="product-footer">
+                  <strong>$12.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="games" data-name="Skyline Siege">
+              <div class="product-image image-three">
+                <span class="product-tag">PC</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Games</span>
+                  <span>★ 4.9</span>
+                </div>
+                <h3>Skyline Siege</h3>
+                <p>High-stakes co-op campaign and PvP arena.</p>
+                <div class="product-footer">
+                  <strong>$29.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="collections" data-name="Cinema Vault 2025">
+              <div class="product-image image-four">
+                <span class="product-tag">Bundle</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Collections</span>
+                  <span>★ 5.0</span>
+                </div>
+                <h3>Cinema Vault 2025</h3>
+                <p>8 award-winning titles in one bundle.</p>
+                <div class="product-footer">
+                  <strong>$49.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="movies" data-name="Harbor Light">
+              <div class="product-image image-five">
+                <span class="product-tag">HDR</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Movies</span>
+                  <span>★ 4.7</span>
+                </div>
+                <h3>Harbor Light</h3>
+                <p>An emotional drama set on a storm-torn coast.</p>
+                <div class="product-footer">
+                  <strong>$16.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="music" data-name="Afterglow Club">
+              <div class="product-image image-six">
+                <span class="product-tag">Mix</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Music</span>
+                  <span>★ 4.8</span>
+                </div>
+                <h3>Afterglow Club</h3>
+                <p>House and disco essentials for late nights.</p>
+                <div class="product-footer">
+                  <strong>$9.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="games" data-name="Pixel Tactics X">
+              <div class="product-image image-seven">
+                <span class="product-tag">Strategy</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Games</span>
+                  <span>★ 4.9</span>
+                </div>
+                <h3>Pixel Tactics X</h3>
+                <p>Tactical battles, factions, and endless replay.</p>
+                <div class="product-footer">
+                  <strong>$24.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="collections" data-name="Creator Pack Pro">
+              <div class="product-image image-eight">
+                <span class="product-tag">Creator</span>
+              </div>
+              <div class="product-body">
+                <div class="product-meta">
+                  <span>Collections</span>
+                  <span>★ 4.8</span>
+                </div>
+                <h3>Creator Pack Pro</h3>
+                <p>Sound kits, overlays, stock and editing presets.</p>
+                <div class="product-footer">
+                  <strong>$39.99</strong>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="experience container" id="collections">
+          <div class="experience-copy">
+            <p class="eyebrow">For every kind of fan</p>
+            <h2>Built for binge-watching, binge-listening, and big wins.</h2>
+            <ul>
+              <li>Instant access to premium digital downloads</li>
+              <li>Exclusive member-only drops and collector packs</li>
+              <li>Flexible bundles for creators, gamers, and cinephiles</li>
+            </ul>
+          </div>
+
+          <div class="feature-panel">
+            <div class="feature-box">
+              <span>🎬</span>
+              <div>
+                <strong>4K Cinematic</strong>
+                <small>Crystal-clear collections</small>
+              </div>
+            </div>
+            <div class="feature-box">
+              <span>🎵</span>
+              <div>
+                <strong>Studio Quality</strong>
+                <small>Lossless streaming ready</small>
+              </div>
+            </div>
+            <div class="feature-box">
+              <span>🎮</span>
+              <div>
+                <strong>Game Pass Access</strong>
+                <small>Seasonal digital offers</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="cart-panel" aria-live="polite">
+        <div class="cart-header">
+          <h3>Your cart</h3>
+          <span id="cartItemCount">0 items</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+          <p class="empty-cart">Your cart is empty.</p>
+        </div>
+        <div class="cart-summary">
+          <div>
+            <span>Subtotal</span>
+            <strong id="cartTotal">$0.00</strong>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </aside>
+
+      <footer class="site-footer" id="support">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand-wrap">
+              <div class="brand-mark">R</div>
+              <div class="brand-text">
+                <span class="brand-name">REDWAP</span>
+                <span class="brand-tag">MEDIA STORE</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Support</a>
+            <a href="#">Partners</a>
+          </div>
+
+          <div class="newsletter">
+            <label for="newsletterInput">Get launch updates</label>
+            <div class="newsletter-row">
+              <input id="newsletterInput" type="email" placeholder="Email address" />
+              <button>Join</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
